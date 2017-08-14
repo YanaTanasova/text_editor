@@ -1,0 +1,144 @@
+@import "../fonts/fonts.css"
+
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, p{
+	margin:0;
+}
+
+.wrapper{
+	background: #464f54;
+	padding-top: 47px;
+}
+
+.header{
+	z-index: 999;
+	position: relative;
+}
+
+.title{
+	background: #181818;
+	box-shadow: -3.536px -3.536px 59px rgba(0, 0, 0, 0.16);
+	width: 816px;
+	margin: 0 0 auto auto;
+	padding: 45px 0 45px 60px;
+}
+
+.title__sup{
+	font-family: 'Proxima Nova Regular', sans-serif;
+	font-size: 0.9375rem;
+	color: #767676;
+	letter-spacing: 0.32rem;
+	text-transform: uppercase;
+}
+
+.title__text{
+	font-family: 'Playfair Display Regular', serif;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: normal;
+	line-height: 1.15;
+	border-bottom: 3px solid rgba(255, 255, 255, .1);
+	padding-bottom: 12px;
+	position: relative;
+}
+
+.title__text:after{
+	content: "";
+	display: block;
+	background: rgba(237, 239, 242, .70);
+	width: 2px;
+	height: 43px;
+	position: absolute;
+	left: 355px;
+	top: 7px;
+	animation: blink 1s linear infinite;
+}
+
+.control-bar{
+	background: #f7bd2c;
+	box-shadow: -3.536px -3.536px 59px rgba(0, 0, 0, 0.16);
+	width: 730px;
+  	margin: 0 0 auto auto;
+  	padding: 20px 40px;
+}
+
+.control-bar__list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.control-bar__item{
+	display: inline-block;
+	padding-right: 35px;
+	opacity: .5;
+	transition: opacity .3s;
+}
+.control-bar__item:hover{
+	opacity: 1;
+}
+
+.main{
+	width: 1060px;
+	background: #fff;
+	padding: 0 65px;
+	margin: -160px auto 0 auto;
+	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.22);
+}
+
+.article{
+	padding: 160px 56px 60px 56px;
+	border-left: 2px solid #e8eced;
+}
+
+.article__info{
+	font-family: 'Proxima Nova Regular', sans-serif;
+	font-size: 1.25rem;
+	color: #b4b4b4;
+	letter-spacing: 0.219rem;
+	text-transform: uppercase;
+	padding-top: 36px;
+}
+
+.article__title{
+	font-family: 'Futura Heavy', sans-serif;
+	font-size: 4.875rem;
+	letter-spacing: 0.053;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #2a2a2a;
+	margin-top: 25px;
+}
+
+.article__subtitle{
+	font-family: Georgia, serif;
+	font-style: italic;
+	color: #8f8f8f;
+	font-size: 1.875rem;
+	padding-bottom: 20px;
+}
+
+.article__text{
+	font-family: Georgia, serif;
+	font-size: 1.6875rem;
+	line-height: 1.481;
+	margin-top: 35px;
+}
+
+.article__text-italic{
+	font-style: italic;
+}
+
+@keyframes blink {
+	50% { opacity: 1;}
+	51% { opacity: 0;}
+	100% { opacity: 0;}
+}
